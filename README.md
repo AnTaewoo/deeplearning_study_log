@@ -1,0 +1,2 @@
+# deeplearning_study_log
+deeplearning_study_log
