@@ -131,7 +131,7 @@ hinton이 인터뷰 당시 현행 연구중인 주제이다. 현재 each neuron�
 
 binary 분류는 이진분류로써, input의 데이터를 사용하여 predict값인 y값을 0 또는 1로 출력을 하여, True/False로 문제를 분류하는 방법이다. 따라서 여러가지 input data를 우리가 학습시킬 수 있는 상태인 feature vector으로 unroll하여 preprocessing하는 것이 중요하다.
 
-### natation
+### notation
 
 $$
 x \in \R^n, y \in {0,1} 일때, f(x) = f([x_1,x_2,...,x_n]) = \hat{y} \approx y
