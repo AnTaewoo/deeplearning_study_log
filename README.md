@@ -13,7 +13,7 @@ deep nn을 구현하면서, 마치 logistic regression layer가 여러층 쌓인
 따라서 위에 3가지의 값에 따라 변수에 superscript square bucket, round 등으로 표시한다.
 
 $$
-a_{unit}^{[layer](train\ example)} = a_{n}^{[l](m)}
+a_{unit}^{[layer]\,(train\ example)} = a_{n}^{[l]\,(m)}
 $$
 
 따라서 각 차원 등등을 고려하여, 식을 위의 표기법을 따라 표현할 예정이며, 특히 #layer는 input layer을 세지 않는다. 이는 추후 뒤에 나올 backpropagation에서 $\frac{\partial J(w,b)}{\partial X}$가 필요하지 않기 때문이다.
@@ -27,7 +27,7 @@ deep nn이라 하더라도, 기존에 x vector로 z를 연산 후, a를 출력�
 따라서 예시로 2번째 데이터셋으로, 1번째 layer, 1번째 노드 연산이 이루어진다고 해보면 연산은 아래와 같다.
 
 $$
-z_{1}^{[1](2)} = w_{1}^{[1]} \cdot X_1 + b^{[1]}
+z_{1}^{[1]\,(2)} = w_{1}^{[1]} \cdot X_1 + b^{[1]}
 $$
 
 이때 w와 b는 model parameter이므로, training example에 독립적이며, b는 현재 모델에서는 layer마다의 scalar값을 가진다. 따라서, b parameter은 unit number에도 독립적이며, 연산시 broadcasting된다.
